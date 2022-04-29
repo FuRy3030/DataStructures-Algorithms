@@ -1,0 +1,224 @@
+.wholeSection {
+    margin-top: 30px;
+    margin-bottom: 55px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: nowrap;
+    overflow: hidden; */
+}
+
+.examples {
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.methods {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.method {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
+    cursor: default;
+    text-align: justify;
+}
+
+.method span {
+    color: #4834d4;
+    font-weight: 800;
+}
+
+.examplesHeader {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #050113;
+    cursor: default;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 0px 0px 2px #030114;
+}
+
+.exampleElement {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgb(27, 26, 26);
+    cursor: default;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px rgb(203 203 206);
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    height: calc(100% - 30px);
+}
+
+.exampleElement i {
+    text-align: center;
+    width: 82.5px;
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.exampleElement span {
+    text-align: justify;
+}
+
+.header {
+    cursor: default;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px !important;
+    text-shadow: 0px 0px 2px #030114;
+    color: #040114;
+}
+
+.examplesRealLife {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 65px;
+}
+
+.exampleRealLife {
+    width: 100%;
+    margin: 10px 0px;
+    height: 88.5%;
+    cursor: default;
+    font-family: 'Inconsolata', monospace !important;
+    color: #576574 !important;
+}
+
+.exampleRealLifeHeader {
+    font-weight: 700 !important;
+    font-size: 1rem;
+    color: rgb(6, 2, 31);
+    text-align: center;
+}
+
+.exampleRealLifeSmall {
+    font-size: 0.75rem;
+    text-align: center;
+    padding-left: 8px;
+}
+
+.exampleRealLifeBody {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.exampleRealLife button {
+    display: none;
+}
+
+.methodLayer {
+    margin: 12.5px 0px;
+}
+
+.methodsButton button {
+    align-items: center;
+    background-color: #FCFCFD !important;
+    border: none !important;
+    border-radius: 0px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #031224;
+    display: inline-flex;
+    font-family: 'Inconsolata', monospace;
+    justify-content: center;
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s, background-image .15s, color .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    width: 100%;
+    font-size: 1.8rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+    .methodsButton button:active {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 3px 7px inset;
+        transform: translateY(2px);
+        background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+        color: white;
+    }
+
+    .methodsButton.methodsButtonClicked button {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset !important;
+        background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%) !important;
+        color: white !important;
+    }
+    
+    .methodsButton button:focus {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        background-image: none;
+        color: #031224;
+    }
+
+    .methodsButton button::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        margin-right: auto;
+    }
+
+.methodsHeader {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 2px #04011a;
+    color: #05021a;
+    cursor: default;
+    text-align: center;
+    padding: 10px 0px;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-shadow: 0px 0px 3.5px 1px #d2d4d6;
+}
+
+.listNoPadding {
+    padding: 0px !important;
+    list-style: none;
+    margin: 0px;
+    height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .methodsButton button {
+        font-size: 1.15rem !important;
+    }
+
+    .methodsHeader {
+        font-size: 1.5rem;
+    }
+}

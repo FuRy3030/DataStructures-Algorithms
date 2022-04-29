@@ -1,0 +1,155 @@
+.header {
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 5px -1px rgb(211, 211, 211);
+    -moz-box-shadow: 0px 4px 5px -1px rgb(211, 211, 211);
+    box-shadow: 0px 4px 5px -1px rgb(211, 211, 211);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed !important;
+    transition: all 0.35s ease-in-out;
+    z-index: 20;
+}
+
+.header.activeLandingScreen {
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.header.activeSubHeader {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.header h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: black;
+    margin-left: 27.5px;
+    text-align: center;
+    cursor: default;
+    margin-bottom: 0px !important;
+    margin-right: auto;
+    transition: all 0.35s ease-in-out;
+}
+
+.header.activeLandingScreen h2 {
+    color: white;
+}
+
+.header h3 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+    position: relative;
+}
+
+.header h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6.5px;
+    width: 100%;
+    height: 2.75px;
+    background: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.45s ease;
+}
+
+.header h3 i {
+    position: relative;
+    top: 2px;
+}
+
+.header.activeLandingScreen h3 {
+    color: white;
+}
+
+.header.activeLandingScreen h3::after {
+    background: white;
+}
+
+.optionRight {
+    margin-right: 45px !important;
+}
+
+.expandIcon {
+    display: none;
+    margin-right: 20px;
+    color: black;
+    font-size: 2.25rem;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.expandIcon.activeLandingScreen {
+    color: white;
+}
+
+@media (hover) {
+    .header h3:hover::after {
+        transform: scaleX(1);
+    }
+
+    .expandIcon:hover {
+        transform: scale(1.25);
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .header h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header h3 {
+        font-size: 1.25rem;
+        margin-right: 20px;
+    }
+
+    .optionRight {
+        margin-right: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .header h3 {
+        font-size: 1.05rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .expandIcon {
+        display: block;
+    }
+
+    .header h3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .expandIcon {
+        margin-right: 10px;
+    }
+
+    .header h2 {
+        margin-left: 15px;
+        font-size: 2rem;
+        padding-right: 7.5px;
+    }
+}

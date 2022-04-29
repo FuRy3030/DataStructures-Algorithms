@@ -1,0 +1,221 @@
+.comparisonTable {
+    width: 92.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.comparisonTable thead tr th {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 2.6rem;
+    color: #0c0622;
+    cursor: default;
+    margin-bottom: 0px;
+}
+
+.comparisonTable tbody tr td {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.sectionHeader {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 1.55rem;
+    color: #0c0622;
+    cursor: default;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.listCell {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #0c0622;
+    cursor: default;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+.listCell ul {
+    margin-bottom: 0px;
+}
+
+.singleLineData {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #0c0622;
+    cursor: default;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.primaryText {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #0c0622;
+    font-family: 'Inconsolata', monospace;
+    margin-bottom: 0px;
+    text-align: left !important;
+}
+
+.primaryTextBig {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #0c0622;
+    font-family: 'Inconsolata', monospace;
+    margin-bottom: 0px;
+    text-align: left !important;
+}
+
+.secondaryText {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #96959b;
+    font-weight: 500;
+}
+
+.secondaryTextAlternative {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #3a3a3c;
+    font-weight: 500;
+}
+
+.descriptionShow {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #4834d4;
+    cursor: pointer;
+    text-align: center;
+    width: max-content;
+    position: relative;
+    margin: 10px 0 15px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descriptionShow::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3.5px;
+    width: 100%;
+    height: 2px;
+    background: #4834d4;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s ease;
+}
+
+.descriptionShow:hover::after {
+    transform: scaleX(1);
+}
+
+.popUpHeader {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 1.45rem;
+    color: #222223;
+    cursor: default;
+}
+
+.popUpBody {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #222223;
+    cursor: default;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 710px) {
+    .comparisonTable tbody tr td {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .comparisonTable thead tr th {
+        font-size: 2.05rem;
+    }
+
+    .sectionHeader {
+        font-size: 1.35rem;
+    }
+
+    .listCell {
+        font-size: 0.9rem;
+    }
+
+    .singleLineData {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .descriptionShow {
+        font-size: 1.1rem;
+    }
+
+    .primaryText {
+        font-size: 1rem;
+    }
+
+    .primaryTextBig {
+        font-size: 1.1rem;
+    }
+
+    .secondaryText {
+        font-size: 0.9rem;
+    }
+
+    .secondaryTextAlternative {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .comparisonTable tbody tr td {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .comparisonTable thead tr th {
+        font-size: 1.75rem;
+    }
+
+    .sectionHeader {
+        font-size: 1.2rem;
+    }
+
+    .listCell {
+        font-size: 0.75rem;
+    }
+
+    .singleLineData {
+        font-size: 0.95rem;
+    }
+
+    .descriptionShow {
+        font-size: 0.95rem;
+    }
+
+    .primaryText {
+        font-size: 0.9rem;
+    }
+
+    .primaryTextBig {
+        font-size: 0.95rem;
+    }
+
+    .secondaryText {
+        font-size: 0.75rem;
+    }
+
+    .secondaryTextAlternative {
+        font-size: 0.75rem;
+    }
+}

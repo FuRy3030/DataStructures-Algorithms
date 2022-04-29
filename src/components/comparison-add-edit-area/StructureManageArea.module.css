@@ -1,0 +1,138 @@
+.addStructureInnerArea {
+    padding: 10px;
+    border: 2px dashed #4834d4;
+    /* background-color: rgba(72, 52, 212, 0.1); */
+    background-color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.addStructureInnerArea .addIcon {
+    font-size: 3.5rem;
+    color: #3742fa;
+    margin-bottom: 21px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addStructureText {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #3742fa;
+    text-align: center;
+    margin-bottom: 0px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.addButton {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addButton:hover .addIcon {
+    transform: scale(1.15);
+}
+
+.addButton:hover .addStructureText {
+    transform: scale(1.15);
+    text-decoration: underline;
+}
+
+.structureSelect {
+    margin-top: 25px;
+    width: 80%;
+    display: none;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 1.1rem;
+    /* background-color: rgba(72, 52, 212, 0.05); */
+}
+
+.chosenDataStructure {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chosenDataStructureIMG {
+    width: 37.5%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chosenDataStructureText {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 1.85rem;
+    color: #0c0622;
+    cursor: default;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.editButton {
+    align-items: center;
+    background: #f5f5fa;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0 rgb(201, 200, 200), 10px 10px 10px 0 #1d0dca17;
+    box-sizing: border-box;
+    color: #2a1f62;
+    cursor: pointer;
+    display: flex;
+    font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    font-size: 1.1rem;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: 8px 55px;
+    position: relative;
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    width: max-content;
+    word-break: normal;
+    word-spacing: normal;
+    outline: 2px solid transparent;
+    outline-offset: 1px;
+}
+
+.editButton:hover {
+    background: #f8f8ff;
+    outline: 2px solid #2a1f62;
+}
+
+.exitIcon {
+    display: none;
+    position: absolute;
+    top: 7.5px;
+    right: 7.5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.9;
+    color: #2a1f62;
+}
+
+.exitIcon:hover {
+    transform: scale(1.15) rotate(180deg);
+    color: #2a1f62;
+    opacity: 1;
+}

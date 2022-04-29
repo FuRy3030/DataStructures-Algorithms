@@ -1,0 +1,41 @@
+#root {
+    scrollbar-width: thin;          
+    scrollbar-color: #686de0 #4834d4;    
+}
+
+#root::-webkit-scrollbar {
+    width: 12px;               
+}
+
+#root::-webkit-scrollbar-track {
+    background: #4834d4;        
+}
+
+#root::-webkit-scrollbar-thumb {
+    background-color: #686de0;    
+    border-radius: 20px;       
+    border: 3px solid #4834d4;  
+}
+
+body {
+    scrollbar-width: thin;          
+    scrollbar-color: #686de0 #4834d4;    
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               
+}
+
+body::-webkit-scrollbar-track {
+    background: #ecf0f1;        
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #30336b;    
+    border-radius: 20px;       
+    border: 3px solid #ecf0f1;  
+}
+
+.containerPage {
+    padding: 95px 15px 20px 15px;
+}

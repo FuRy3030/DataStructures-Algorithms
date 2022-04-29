@@ -1,0 +1,39 @@
+.code {
+    width: 90%;
+    margin-left: auto !important;
+    margin-right: auto !important; 
+    margin-bottom: 45px !important;
+    border-radius: 12.5px;
+    max-height: 700px;
+}
+
+.code {
+    scrollbar-width: thin;          
+    scrollbar-color: #ecf0f1 #2d2d2d;    
+}
+
+.code::-webkit-scrollbar {
+    width: 12px;               
+}
+
+.code::-webkit-scrollbar-track {
+    background: transparent;        
+}
+
+.code::-webkit-scrollbar-thumb {
+    background-color: #ecf0f1;    
+    border-radius: 10px;       
+    border: 3px solid #2d2d2d;  
+}
+
+.header {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #050113;
+    cursor: default;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 0px 0px 2px #030114;
+}

@@ -1,0 +1,129 @@
+.result {
+    width: 100%;
+    padding: 6px;
+    background-color: white;
+    height: auto;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    outline-offset: 1px;
+    outline: transparent solid 2px;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+}
+
+.result:hover {
+    outline: #4834d4 solid 2px;
+}
+
+.mainInfo {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 12px;
+    margin-bottom: 8px;
+}
+
+.mainInfo i {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.structureName {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(27, 26, 26);
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+
+.subInfo {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.subInfo i {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    color: #4834d4;
+}
+
+.subInfoDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 6px;
+    flex: 2;
+}
+
+.subInfoDetails h6 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #bdc3c7;
+    margin-bottom: 0px;
+    width: 50%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .subInfoDetails h6 {
+        font-size: 1rem;
+    }
+
+    .structureName {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .subInfoDetails h6 {
+        font-size: 0.85rem;
+    }
+
+    .structureName {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .subInfoDetails h6 {
+        font-size: 0.725rem;
+    }
+
+    .structureName {
+        font-size: 1.3rem;
+    }
+
+    .structureName {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .subInfoDetails h6 {
+        font-size: 0.625rem;
+    }
+
+    .subInfo i {
+        font-size: 0.9rem;
+    }
+
+    .mainInfo i {
+        font-size: 0.9rem;
+    }
+
+    .structureName {
+        font-size: 0.8rem;
+    }
+}

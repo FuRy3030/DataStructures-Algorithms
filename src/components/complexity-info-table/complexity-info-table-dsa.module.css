@@ -1,0 +1,47 @@
+.table {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.table th, td {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    cursor: default;
+}
+
+.table td {
+    font-weight: 600;
+}
+
+.biggestHeader {
+    font-family: 800;
+    font-size: 1.75rem;
+}
+
+.mediumHeader {
+    font-family: 600;
+    font-size: 1.4rem;
+}
+
+.smallestHeader {
+    font-size: 1.1rem;
+}
+
+.mediumValue {
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .mediumValue {
+        font-size: 1rem;
+    }
+
+    .medHeaderAlgo {
+        font-size: 1.1rem;
+    }
+
+    .bigHeaderAlgo {
+        font-size: 1.35rem;
+    }
+}

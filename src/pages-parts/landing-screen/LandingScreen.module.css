@@ -1,0 +1,25 @@
+.landingScreenContent {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/public/images/background-landing-page-new.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingScreenContent span {
+    font-family: 'Quantico', sans-serif;
+    font-size: 3.2rem;
+    color: #00f3ff;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .landingScreenContent span {
+        font-size: 2.2rem;
+        padding-top: 100px;
+    }
+}

@@ -1,0 +1,170 @@
+.card {
+    border: none !important;
+    outline: none !important;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(203, 198, 205, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(203, 198, 205, 1);
+    box-shadow: 0px 0px 5px 0px rgba(203, 198, 205, 1);
+    cursor: pointer;
+    transition: all 0.55s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    background-color: rgba(104, 109, 224, 0.6);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(86, 97, 193, 1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(86, 97, 193, 1);
+    box-shadow: 0px 0px 20px 0px rgba(86, 97, 193, 1);
+}
+
+.img {
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 800;
+    font-size: 1.95rem;
+    color: black;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.card:hover .title {
+    color: #30336b;
+}
+
+.body {
+    padding: 10px !important;
+}
+
+.descriptionHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.descriptionHeaderPosition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descriptionHeaderPosition div {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
+    font-size: 0.7rem;
+    color: white;
+    background-color: greenyellow;
+    padding: 3px;
+    border-radius: 2.5px;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.descriptionHeader span {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: black;
+    text-align: center;
+}
+
+.card:hover .descriptionHeader span {
+    color: #30336b;
+}
+
+@media only screen and (max-width: 1200px) {
+    .descriptionHeader span {
+        font-size: 0.85rem;
+    }
+
+    .descriptionHeaderPosition div {
+        font-size: 0.6rem;
+        padding: 1.5px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    .descriptionHeader {
+        flex-wrap: wrap;
+    }
+
+    .descriptionHeaderPosition {
+        width: 50%;
+    }
+
+    .descriptionHeaderPosition div {
+        width: 90%;
+        margin-top: 2.5px;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .img {
+        width: 40%;
+    }
+
+    .title {
+        font-size: 2.35rem;
+    }
+
+    .descriptionHeaderPosition {
+        width: auto;
+    }
+
+    .descriptionHeaderPosition div {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 1.125rem;
+        padding: 3px;
+    }
+
+    .descriptionHeader span {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .descriptionHeader {
+        flex-wrap: wrap;
+    }
+
+    .descriptionHeaderPosition {
+        width: 50%;
+    }
+
+    .descriptionHeaderPosition div {
+        width: 90%;
+        margin-top: 2.5px;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .img {
+        width: 65%;
+    }
+
+    .descriptionHeader span {
+        font-size: 0.85rem;
+    }
+
+    .descriptionHeaderPosition div {
+        font-size: 0.6rem;
+        padding: 1.5px;
+    }
+}

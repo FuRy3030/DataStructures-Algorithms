@@ -1,0 +1,75 @@
+.leftBar {
+    width: 225px;
+    height: calc(100vh - 75px);
+    position: fixed;
+    top: 75px;
+    left: 0px;
+    z-index: 10;
+    background-color: ghostwhite;
+    -webkit-box-shadow: 2px 0px 4px 0px rgb(221 221 225);
+    -moz-box-shadow: 2px 0px 4px 0px rgb(221 221 225);
+    box-shadow: 2px 0px 4px 0px rgb(221 221 225);
+    overflow: auto;
+}
+
+@media only screen and (max-width: 625px) {
+    .leftBar {
+        display: none !important;
+    }
+}
+
+.leftBar {
+    scrollbar-width: thin;          
+    scrollbar-color: #ecf0f1 #545458;    
+}
+
+.leftBar::-webkit-scrollbar {
+    width: 8px;               
+}
+
+.leftBar::-webkit-scrollbar-track {
+    background: #ecf0f1;        
+}
+
+.leftBar::-webkit-scrollbar-thumb {
+    background-color: #545458;    
+    border-radius: 10px;       
+    border: 3px solid #ecf0f1;  
+}
+
+.leftBar h3 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: default;
+}
+
+.leftBar h5 {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 32.5px 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+.leftBar h5::after {
+    content: "";
+    position: absolute;
+    left: 12.5%;
+    bottom: -4px;
+    width: 75%;
+    height: 2px;
+    background: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s ease;
+}
+
+.leftBar h5:hover::after {
+    transform: scaleX(1);
+}

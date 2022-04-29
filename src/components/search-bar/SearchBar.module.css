@@ -1,0 +1,152 @@
+.SearchBar {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600 !important;
+    font-size: 1.25rem !important;
+    color: black !important;
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    border-color: black !important;
+    background-color: #f5f7f8 !important;
+    border-width: 2px 0px 2px 2px !important;
+    transition: all 0.35s ease-in-out !important; 
+}
+
+.SearchBar.activeLandingScreen {
+    background-color: transparent !important;
+    border-color: white !important;
+    color: #686de0 !important;
+}
+
+.SearchBar.activeLandingScreen::placeholder {
+    color: #686de0 !important;
+}
+
+.SearchBar:focus {
+    box-shadow: none !important;
+    border-color: black !important;
+}
+
+.SearchBar.activeLandingScreen:focus {
+    border-color: white !important;
+}
+
+.header {
+    width: 450px !important;
+    max-width: 450px !important;
+    margin-right: 27.5px;
+}
+
+.addon {
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    border-color: black !important;
+    background-color: #57606f !important;
+    border-width: 2px 2px 2px 0px !important;
+    transition: all 0.35s ease-in-out !important;  
+}
+
+.addon.activeLandingScreen {
+    background-color: transparent !important;
+    border-color: white !important;
+}
+
+.addon i {
+    color: white;
+    transition: all 0.35s ease-in-out; 
+}
+
+.searchResults {
+    position: absolute;
+    top: 48px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px !important;
+    padding: 6px;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(191, 194, 199, 1);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(191, 194, 199, 1);
+    box-shadow: 0px 0px 4px 0px rgba(191, 194, 199, 1);
+}
+
+.nothingFound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.nothingFound i {
+    font-size: 2rem;
+    color: #4834d4;
+    margin-bottom: 8px;
+}
+
+.nothingFound h6 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(27, 26, 26);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header {
+        width: 250px !important;
+        max-width: 250px !important;
+    }
+
+    .SearchBar {
+        padding: 0.1rem 0.75rem !important;
+        font-size: 1.1rem !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .header {
+        width: 210px !important;
+        max-width: 210px !important;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .header {
+        width: 300px !important;
+        max-width: 300px !important;
+        margin-right: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .header {
+        width: 200px !important;
+        max-width: 200px !important;
+    }
+
+    .SearchBar {
+        padding: 0rem 0.45rem !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header {
+        width: 165px !important;
+        max-width: 165px !important;
+        margin-right: 10px !important;
+    }
+
+    .SearchBar {
+        font-size: 0.85rem !important;
+    }
+
+    .addon i {
+        font-size: 0.9rem;
+    }
+
+    .nothingFound h6 {
+        font-size: 0.9rem;
+    }
+}
